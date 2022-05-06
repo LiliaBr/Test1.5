@@ -1,0 +1,172 @@
+@import "normalize";
+@import "vars";
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("/assets/font/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("/assets/font/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("/assets/font/TTLakes-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "TT Lakes";
+  background-color: $color_primary;
+  min-width: 320px;
+  height: 100%;
+}
+
+.slider {
+
+  &__title {
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    padding: 16px;
+  }
+  &__title h3 {
+    font-weight: 400;
+    font-style: 16px;
+    line-height: 24px;
+    color: $color_6;
+  }
+}
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  padding: 16px;
+  flex-wrap: nowrap;
+  // box-shadow: inset  15px 0px 8px -3px black;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-wrapper {
+    flex-wrap: wrap;
+    max-height: 160px;
+    overflow: hidden;
+    transition: max-height 1s linear;
+  }
+  .swiper-wrapper.is-collabsed {
+    max-height: 260px;
+  }
+}
+
+.swiper-pagination-bullets {
+  position: static;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1056px) {
+  .swiper-wrapper:nth-child(4n) {
+    page-break-after: always;
+  }
+}
+
+.card {
+    border: 1px solid $color_5;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    width: 240px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0;
+    align-content: center;
+    align-items: center;
+  }
+@media only screen and (min-width: 768px) {
+  .card {
+    margin: 0 24px 24px 0;
+  }
+}
+
+.brand {
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+
+    &--lenovo {
+      background-image: url("../assets/icon__logo/lenovo.svg");
+    }
+
+    &--samsung {
+      background-image: url("../assets/icon__logo/samsung.svg");
+    }
+
+    &--apple {
+      background-image: url("../assets/icon__logo/apple.svg");
+    }
+
+    &--sonic {
+      background-image: url("../assets/icon__logo/viewSonic.svg");
+    }
+
+    &--bosch {
+      background-image: url("../assets/icon__logo/bosch.svg");
+    }
+
+    &--hp {
+      background-image: url("../assets/icon__logo/hp.svg");
+    }
+
+    &--acer {
+      background-image: url("../assets/icon__logo/acer.svg");
+    }
+
+    &--sony {
+      background-image: url("../assets/icon__logo/sony.svg");
+    }
+  }
+}
+.dropdown-button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid $color_2;
+  border-radius: 50%;
+  background-image: url("../assets/icon__logo/dropdown.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.read-more {
+  font-weight: 500;
+  font-style: 16px;
+  line-height: 24px;
+  background-image: url("../assets/icon__logo/icon__arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  margin-left: 16px;
+  margin-top: 24px;
+  display: none;
+  padding-left: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .read-more {
+    display: block;
+  }
+}
