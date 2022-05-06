@@ -361,19 +361,19 @@ template {
 
 @font-face {
   font-family: "TT Lakes";
-  src: url("/TTLakes-Regular.22438c9a.ttf") format("truetype");
+  src: url("TTLakes-Regular.22438c9a.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url("/TTLakes-Medium.0530da0f.ttf") format("truetype");
+  src: url("TTLakes-Medium.0530da0f.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "TT Lakes";
-  src: url("/TTLakes-Bold.1fb9d512.ttf") format("truetype");
+  src: url("TTLakes-Bold.1fb9d512.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -457,28 +457,28 @@ body {
   background-position: 0 center;
 }
 .brand__img--lenovo {
-  background-image: url("/lenovo.6df13aa7.svg");
+  background-image: url("lenovo.6df13aa7.svg");
 }
 .brand__img--samsung {
-  background-image: url("/samsung.c1941dd9.svg");
+  background-image: url("samsung.c1941dd9.svg");
 }
 .brand__img--apple {
-  background-image: url("/apple.bdd331e1.svg");
+  background-image: url("apple.bdd331e1.svg");
 }
 .brand__img--sonic {
-  background-image: url("/viewSonic.0f01f6ef.svg");
+  background-image: url("viewSonic.0f01f6ef.svg");
 }
 .brand__img--bosch {
-  background-image: url("/bosch.efbc106c.svg");
+  background-image: url("bosch.efbc106c.svg");
 }
 .brand__img--hp {
-  background-image: url("/hp.be4126ec.svg");
+  background-image: url("hp.be4126ec.svg");
 }
 .brand__img--acer {
-  background-image: url("/acer.8ab155f4.svg");
+  background-image: url("acer.8ab155f4.svg");
 }
 .brand__img--sony {
-  background-image: url("/sony.4f9cfb8e.svg");
+  background-image: url("sony.4f9cfb8e.svg");
 }
 
 .dropdown-button {
@@ -486,7 +486,7 @@ body {
   height: 40px;
   border: 2px solid #FF3E79;
   border-radius: 50%;
-  background-image: url("/dropdown.3cc214d6.svg");
+  background-image: url("dropdown.3cc214d6.svg");
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -495,7 +495,7 @@ body {
   font-weight: 500;
   font-style: 16px;
   line-height: 24px;
-  background-image: url("/icon__arrow.78f91b05.svg");
+  background-image: url("icon__arrow.78f91b05.svg");
   background-repeat: no-repeat;
   background-position: 0 center;
   margin-left: 16px;
